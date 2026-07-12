@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHer AI — Roadmap Karier Tech untuk Perempuan</title>
+  <meta name="description" content="TechHer AI membantu perempuan yang ingin beralih karier ke bidang teknologi lewat roadmap belajar personal berbasis AI.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">TechHer<span>AI</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#problem">Kenapa</a>
+        <a href="#demo">Roadmap AI</a>
+        <a href="#features">Fitur</a>
+      </nav>
+
+      <button class="btn-nav-cta" id="navCtaBtn">Buat roadmap-ku</button>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO SECTION ============ -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Women in tech</p>
+        <h1 class="hero-title">Satu Langkah.<br><span class="highlight">1% Progress</span><br>Setiap hari.</h1>
+        <p class="hero-subhead">
+          Kamu tidak butuh gelar IT atau pengalaman bertahun-tahun untuk mulai. Cukup langkah pertama yang tepat.
+          TechHer AI menyusun roadmap belajar yang sesuai dengan latar belakangmu — gratis, personal, dan siap kamu mulai hari ini.
+        </p>
+        <button class="btn-primary" id="heroCtaBtn">Buat roadmap-ku →</button>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/hero-illustration.png"
+             alt="Ilustrasi seorang perempuan bekerja dengan laptop dan grafik progres yang menanjak"
+             width="480" height="480" loading="eager">
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL PROOF / TRUST BAND ============ -->
+    <!-- Karena produk masih tahap awal (belum ada pengguna publik),
+         social proof di sini berupa penanda kredibilitas yang jujur:
+         teknologi yang menopang, dasar data, cakupan jalur karier,
+         dan komitmen akses gratis. -->
+    <section id="social-proof" class="social-proof" aria-label="Alasan untuk percaya pada TechHer AI">
+      <p class="social-proof-eyebrow">Fondasi yang bisa kamu andalkan</p>
+      <ul class="trust-grid">
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 3 7v6c0 5 3.5 8 9 9 5.5-1 9-4 9-9V7l-9-5Z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          <p class="trust-title">Ditenagai Google Gemini</p>
+          <p class="trust-desc">Roadmap disusun oleh model AI generatif terbaru dari Google.</p>
+        </li>
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 3v18h18"/>
+            <path d="m7 14 3-4 3 3 4-6"/>
+          </svg>
+          <p class="trust-title">Berbasis data industri</p>
+          <p class="trust-desc">Konteks dibangun dari data nyata kondisi perempuan di dunia tech.</p>
+        </li>
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V6l7 6-7 6Z"/>
+            <path d="M4 6v12"/>
+          </svg>
+          <p class="trust-title">3 jalur karier siap pakai</p>
+          <p class="trust-desc">Web Development, Data Analyst, dan UI/UX Design.</p>
+        </li>
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/>
+          </svg>
+          <p class="trust-title">Gratis untuk memulai</p>
+          <p class="trust-desc">Langkah pertamamu tidak berbayar — cukup mulai hari ini.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ PROBLEM / CONTEXT SECTION ============ -->
+    <section id="problem" class="problem">
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number">&lt;20%</span>
+          <span class="stat-label">Partisipasi perempuan di industri teknologi Indonesia</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">8%</span>
+          <span class="stat-label">Perempuan yang mencapai posisi pimpinan tertinggi di bidang teknologi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2&times;</span>
+          <span class="stat-label">Peluang diterima kerja lebih tinggi dengan jalur belajar yang terarah</span>
+        </div>
+      </div>
+
+      <div class="problem-text">
+        <h2>Kenapa career switching ke tech terasa berat?</h2>
+        <p>
+          Bukan karena perempuan tidak mampu — tapi karena minimnya akses ke jalur karier yang jelas,
+          mentor yang bisa diandalkan, dan rasa percaya diri yang sering kali harus dibangun sendirian.
+          TechHer AI hadir untuk mengisi celah itu: memberi arah yang jelas, satu langkah pada satu waktu.
+        </p>
+        <p class="source">Sumber data: Kompas.com, Juni 2026</p>
+      </div>
+    </section>
+
+    <!-- ============ SOLUSI / DEMO FITUR AI ============ -->
+    <section id="demo" class="demo">
+      <div class="demo-intro">
+        <h2>Roadmap belajarmu, dibuat khusus untukmu</h2>
+        <p>Ceritakan sedikit tentang dirimu, AI kami akan menyusun roadmap belajar yang paling relevan dengan tujuan kariermu.</p>
+      </div>
+
+      <form id="roadmapForm" class="roadmap-form">
+        <div class="form-grid">
+          <label>
+            Latar belakang saat ini
+            <select id="background" required>
+              <option value="" disabled selected>Pilih latar belakangmu</option>
+              <option value="non-tech">Non-tech / baru mulai</option>
+              <option value="basic-coding">Sudah tahu dasar coding</option>
+              <option value="lainnya">Bidang lain (career switcher)</option>
+            </select>
+          </label>
+
+          <label>
+            Bidang tech yang diminati
+            <select id="interest" required>
+              <option value="" disabled selected>Pilih bidang minat</option>
+              <option value="web-development">Web development</option>
+              <option value="data-analyst">Data analyst</option>
+              <option value="ui-ux">UI/UX design</option>
+            </select>
+          </label>
+
+          <label>
+            Waktu belajar per minggu
+            <select id="hours" required>
+              <option value="" disabled selected>Pilih ketersediaan waktu</option>
+              <option value="<5 jam">Kurang dari 5 jam</option>
+              <option value="5-10 jam">5–10 jam</option>
+              <option value="10+ jam">10 jam lebih</option>
+            </select>
+          </label>
+        </div>
+
+        <details class="api-key-box">
+          <summary>Pakai Gemini API key milikmu sendiri (opsional)</summary>
+          <input type="password" id="apiKeyInput" placeholder="Tempel Gemini API key di sini" autocomplete="off">
+          <p class="hint">API key hanya diproses di browser kamu dan tidak pernah kami simpan. Tanpa API key, TechHer AI tetap menampilkan roadmap dari sistem contoh bawaan.</p>
+        </details>
+
+        <button type="submit" class="btn-primary" id="generateBtn">Buatkan roadmap-ku</button>
+      </form>
+
+      <div id="roadmapResult" class="roadmap-result" aria-live="polite"></div>
+    </section>
+
+    <!-- ============ FITUR LAIN (PREVIEW) ============ -->
+    <section id="features" class="features">
+      <h2>Lebih banyak dukungan, segera hadir</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="badge">Segera hadir</span>
+          <h3>AI Career Assessment</h3>
+          <p>Kenali potensi dan kesiapan kariermu sebelum memulai transisi.</p>
+        </div>
+        <div class="feature-card">
+          <span class="badge">Segera hadir</span>
+          <h3>AI Mock Interview</h3>
+          <p>Latihan interview dengan AI, kapan saja kamu siap.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA PENUTUP ============ -->
+    <section id="cta-final" class="cta-final">
+      <h2>Langkah pertamamu ke tech dimulai hari ini</h2>
+      <p>Tidak perlu tahu semuanya dari awal. Cukup mulai.</p>
+      <button class="btn-primary" id="finalCtaBtn">Buat roadmap-ku →</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>TechHer AI — dibuat untuk mendukung perempuan yang berani beralih karier ke teknologi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
