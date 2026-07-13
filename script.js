@@ -57,7 +57,7 @@ const roadmapResult = document.getElementById('roadmapResult');
 const generateBtn = document.getElementById('generateBtn');
 
 // Nama model Gemini yang dipakai untuk generate roadmap
-const GEMINI_MODEL = 'gemini-2.0-flash';
+const GEMINI_MODEL = 'gemini-2.5-flash';
 
 roadmapForm.addEventListener('submit', async (event) => {
   event.preventDefault();
